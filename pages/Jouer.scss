@@ -1,0 +1,30 @@
+div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    
+    &:hover {
+      background-color: #f1c40f;
+    }
+  
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  
+  span {
+    padding: 10px;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 50%;
+  }
+  
