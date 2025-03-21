@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { patisserieApi } from './api'; // Changer ici de 'api' à 'patisserieApi'
+import { patisserieApi } from './api'; 
 
 const patisseriesSlice = createSlice({
   name: 'patisseries',

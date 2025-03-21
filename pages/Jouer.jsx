@@ -7,7 +7,7 @@ const Jouer = () => {
   const [essais, setEssais] = useState(3);
   const [gagne, setGagne] = useState(null);
 
-  // Fonction pour lancer les dés
+
   const lancerDes = () => {
     if (essais > 0) {
       const nouveauxDes = des.map(() => Math.floor(Math.random() * 6) + 1);
@@ -17,7 +17,7 @@ const Jouer = () => {
     }
   };
 
-  // Vérifier si une combinaison gagnante (brelan ou carré) est obtenue
+
   const verifierGagnant = (lancer) => {
     const counts = lancer.reduce((acc, val) => {
       acc[val] = (acc[val] || 0) + 1;

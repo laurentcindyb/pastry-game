@@ -13,7 +13,7 @@ const Login = () => {
     try {
       const response = await login({ email, password }).unwrap();
       console.log(response);
-      // Si la connexion est réussie, rediriger vers la page d'administration ou autre
+     
       navigate("/admin");
     } catch (err) {
       console.error("Erreur de connexion", err);

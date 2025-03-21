@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar.jsx";
 
 function App() {
 
-  const isAuthenticated = useAuth();  // Utilisation du hook personnalisé pour vérifier l'authentification
+  const isAuthenticated = useAuth();  
 
   return (
     <BrowserRouter>
@@ -18,7 +18,7 @@ function App() {
         <Route path="/jouer" element={<Jouer />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-           {/* Protection de la route admin */}
+           
            <Route
           path="/admin"
           element={isAuthenticated ? <Admin /> : <Navigate to="/login" />}
